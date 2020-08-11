@@ -3,12 +3,20 @@ import './App.css';
 import { Navbar, Jumbotron, Container } from 'react-bootstrap';
 import Wrapper from "./components/wrapper";
 import GiantsCard from "./components/cards";
-import giants from "./giants.json"
+import giants from "./giants.json";
 
 class App extends Component {
   // Setting this.state.giants to the giants json array
   state = {
-    giants: giants
+    giants: giants,
+    score: 0,
+    highScore: 0,
+    clicked: []
+  };
+
+  handleIncrement = () => {
+    // We always use the setState method to update a component's state
+    this.setState({ count: this.state.count + 1 });
   };
 
 // Map over this.state.giants and render a GiantsCard component for each Giant object
@@ -25,7 +33,7 @@ class App extends Component {
           </Navbar.Collapse>
           <Navbar.Collapse className="justify-content-end">
             <Navbar.Text>
-              Score: {0} | Top Score: {0}
+              Score: {this.state.count} | Top Score: {this.state.highScore}
             </Navbar.Text>
           </Navbar.Collapse>
         </Navbar>
@@ -38,9 +46,10 @@ class App extends Component {
           </Container>
         </Jumbotron>
         <Wrapper>
-          {this.state.giants.map(friend => (
+          {this.state.giants.map(giants => (
             <GiantsCard
             image={giants.image}
+            handleIncrement={this.handleIncrement}
           />
           ))}
         </Wrapper>

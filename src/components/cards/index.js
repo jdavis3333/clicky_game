@@ -5,10 +5,7 @@ function GiantsCard(props) {
   return (
     <div className="card">
       <div className="img-container">
-        <img alt={props.name} src={props.image} />
-      </div>
-      <div className="content">
-            {props.image}
+        <img alt={props.name} onClick={props.handleIncrement} src={props.image} />
       </div>
     </div>
   );
