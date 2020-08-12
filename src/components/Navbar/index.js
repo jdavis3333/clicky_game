@@ -1,8 +1,8 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 import "./style.css";
+import { Navbar } from 'react-bootstrap';
 
-function Navbar() {
+function MyNavbar(props) {
     return (      
             <Navbar>
                 <Navbar.Brand href="/">Clicky-Game</Navbar.Brand>
@@ -14,7 +14,7 @@ function Navbar() {
                 </Navbar.Collapse>
                 <Navbar.Collapse className="justify-content-end">
                     <Navbar.Text>
-                        Score: {0} | Top Score: {0}
+                        Score: {props.score} | Top Score: {props.highScore}
                     </Navbar.Text>
                 </Navbar.Collapse>
             </Navbar>  
@@ -22,4 +22,4 @@ function Navbar() {
   
 }   
 
-export default Navbar;
+export default MyNavbar;
