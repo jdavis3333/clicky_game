@@ -9,11 +9,8 @@ class MyWrapper extends React.Component {
     giants,
     score: 0,
     highScore: 0,
-    clickedCards: []
   };
 
- //randomize images after each click
-  // cardShuffle = (id) =>
 
   handleIncrement = (id) => {
     var giants = this.state.giants;
@@ -33,9 +30,9 @@ class MyWrapper extends React.Component {
         }
       }
     }
-   
-    // call shuffle fn Here()
-    this.setState({ score: score, highScore: highScore, giants: giants });
+    //shuffle cards on click
+    this.state.giants.sort(() => Math.random() - .5)
+    this.setState({ score: score, highScore: highScore, giants: giants, });
 
   };
 
@@ -58,9 +55,7 @@ class MyWrapper extends React.Component {
         </div>
       </div>  
     )
-
   }
-
 }
 
 export default MyWrapper;

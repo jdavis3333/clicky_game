@@ -4,10 +4,10 @@ import { Navbar } from 'react-bootstrap';
 
 function MyNavbar(props) {
     return (      
-            <Navbar>
+            <Navbar className="bg-light justify-content-between">
                 <Navbar.Brand href="/">Clicky-Game</Navbar.Brand>
                 <Navbar.Toggle />
-                <Navbar.Collapse className="justify-content-center">
+                <Navbar.Collapse className="text-center strong">
                     <Navbar.Text>
                         Click an image to begin!
               </Navbar.Text>
