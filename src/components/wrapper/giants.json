@@ -2,61 +2,74 @@
     {
         "id": 1,
         "name": "belt",
+        "clicked": false,
         "image": "https://securea.mlb.com/mlb/images/players/head_shot/474832.jpg"
+
     },
     {
         "id": 2,
         "name": "crawford",
+        "clicked": false,
         "image": "https://securea.mlb.com/mlb/images/players/head_shot/543063.jpg"
     },
     {
         "id": 3,
         "name": "cueto",
+        "clicked": false,
         "image": "https://securea.mlb.com/mlb/images/players/head_shot/456501.jpg"
     },
     {
         "id": 4,
         "name": "dickerson",
+        "clicked": false,
         "image": "https://securea.mlb.com/mlb/images/players/head_shot/543105.jpg"
     },
     {
         "id": 5,
         "name": "flores",
+        "clicked": false,
         "image": "https://securea.mlb.com/mlb/images/players/head_shot/527038.jpg"
     },
     {
         "id": 6,
         "name": "longoria",
+        "clicked": false,
         "image": "https://securea.mlb.com/mlb/images/players/head_shot/446334.jpg"
     },
     {
         "id": 7,
         "name": "pence",
+        "clicked": false,
         "image": "https://securea.mlb.com/mlb/images/players/head_shot/452254.jpg"
     },
     {
         "id": 8,
         "name": "sandoval",
+        "clicked": false,
         "image": "https://securea.mlb.com/mlb/images/players/head_shot/467055.jpg"
     },
     {
         "id": 9,
         "name": "slater",
+        "clicked": false,
         "image": "https://securea.mlb.com/mlb/images/players/head_shot/596103.jpg"
     },
     {
         "id": 10,
         "name": "solano",
+        "clicked": false,
         "image": "https://securea.mlb.com/mlb/images/players/head_shot/456781.jpg"
     },
     {
         "id": 11,
         "name": "tromp",
+        "clicked": false,
         "image": "https://securea.mlb.com/mlb/images/players/head_shot/644433.jpg"
     },
     {
         "id": 12,
         "name": "yaz",
+        "clicked": false,
         "image": "https://securea.mlb.com/mlb/images/players/head_shot/573262.jpg"
     }
 ]
